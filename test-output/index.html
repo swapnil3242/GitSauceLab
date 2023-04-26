@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Suite" class="navigator-link">
+              <span class="suite-name border-failed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
+                    <span>D:\GIT\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">13 methods, 3 failed,   10 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.TestCasesForFunctionalityOfSwagLabs" class="method navigator-link" hash-for-method="VerifyChekoutFunctionality">VerifyChekoutFunctionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.TestCasesForFunctionalityOfSwagLabs" class="method navigator-link" hash-for-method="removeProductFromCart">removeProductFromCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.ValidatingLoginFunctionality" class="method navigator-link" hash-for-method="verifyLoginWithperformance_glitch_user">verifyLoginWithperformance_glitch_user</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.TestCasesForFunctionalityOfSwagLabs" class="method navigator-link" hash-for-method="RemoveMultipleProductsFromCart">RemoveMultipleProductsFromCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.TestCasesForFunctionalityOfSwagLabs" class="method navigator-link" hash-for-method="addMultipleProductToCart">addMultipleProductToCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.TestCasesForFunctionalityOfSwagLabs" class="method navigator-link" hash-for-method="addProductOnCart">addProductOnCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.TestCasesForFunctionalityOfSwagLabs" class="method navigator-link" hash-for-method="verifyLogInFunctionality(problem_user, secret_sauce)">verifyLogInFunctionality(problem_user, secret_sauce)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.TestCasesForFunctionalityOfSwagLabs" class="method navigator-link" hash-for-method="verifyLogInFunctionality(performance_glitch_user, secret_sauce)">verifyLogInFunctionality(performance_glitch_user, secret_sauce)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.TestCasesForFunctionalityOfSwagLabs" class="method navigator-link" hash-for-method="verifyLogInFunctionality(standard_user, secret_sauce)">verifyLogInFunctionality(standard_user, secret_sauce)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.TestCasesForFunctionalityOfSwagLabs" class="method navigator-link" hash-for-method="verifyLogInFunctionality(locked_out_user, secret_sauce)">verifyLogInFunctionality(locked_out_user, secret_sauce)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.ValidatingLoginFunctionality" class="method navigator-link" hash-for-method="verifyLoginWithlocked_out_user">verifyLoginWithlocked_out_user</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.ValidatingLoginFunctionality" class="method navigator-link" hash-for-method="verifyLoginWithproblem_user">verifyLoginWithproblem_user</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.ValidatingLoginFunctionality" class="method navigator-link" hash-for-method="verifyLoginWithstandard_user">verifyLoginWithstandard_user</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">test.TestCasesForFunctionalityOfSwagLabs</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyChekoutFunctionality">
+                  </a> <!-- VerifyChekoutFunctionality -->
+                  <span class="method-name">VerifyChekoutFunctionality</span>
+                  <div class="stack-trace">java.lang.NumberFormatException: For input string: &quot;ax: $3.68&quot;
+	at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2054)
+	at java.base/jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
+	at java.base/java.lang.Double.parseDouble(Double.java:651)
+	at pom.Overview.getTotle(Overview.java:58)
+	at test.TestCasesForFunctionalityOfSwagLabs.VerifyChekoutFunctionality(TestCasesForFunctionalityOfSwagLabs.java:253)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="removeProductFromCart">
+                  </a> <!-- removeProductFromCart -->
+                  <span class="method-name">removeProductFromCart</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: target frame detached
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=112.0.5615.138)
+Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [04c67b6986910d9146017a0a46d912fa, findElements {using=xpath, value=//div[@class=&quot;cart_item&quot;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.138, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\swapn\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51695}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51695/devtoo..., se:cdpVersion: 112.0.5615.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 04c67b6986910d9146017a0a46d912fa
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElements(ElementLocation.java:179)
+	at org.openqa.selenium.remote.ElementLocation.findElements(ElementLocation.java:102)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:367)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:359)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElements(DefaultElementLocator.java:87)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:37)
+	at jdk.proxy2/jdk.proxy2.$Proxy27.size(Unknown Source)
+	at pom.CartPage.numberOfContainers(CartPage.java:33)
+	at test.TestCasesForFunctionalityOfSwagLabs.removeProductFromCart(TestCasesForFunctionalityOfSwagLabs.java:130)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">test.ValidatingLoginFunctionality</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginWithperformance_glitch_user">
+                  </a> <!-- verifyLoginWithperformance_glitch_user -->
+                  <span class="method-name">verifyLoginWithperformance_glitch_user</span>
+                  <div class="stack-trace">org.testng.internal.thread.ThreadTimeoutException: Method test.ValidatingLoginFunctionality.verifyLoginWithperformance_glitch_user() didn&apos;t finish within the time-out 1200
+	at java.base@17.0.5/jdk.internal.misc.Unsafe.park(Native Method)
+	at java.base@17.0.5/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+	at java.base@17.0.5/java.util.concurrent.CompletableFuture$Signaller.block(CompletableFuture.java:1866)
+	at java.base@17.0.5/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3463)
+	at java.base@17.0.5/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3434)
+	at java.base@17.0.5/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1939)
+	at java.base@17.0.5/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at app//org.asynchttpclient.netty.NettyResponseFuture.get(NettyResponseFuture.java:206)
+	at app//org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:59)
+	at app//org.openqa.selenium.remote.http.netty.NettyHttpHandler$$Lambda$491/0x0000000800fe7078.execute(Unknown Source)
+	at app//org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+	at app//org.openqa.selenium.remote.http.AddSeleniumUserAgent$$Lambda$651/0x0000000801021660.execute(Unknown Source)
+	at app//org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+	at app//org.openqa.selenium.remote.http.Filter$$Lambda$492/0x0000000800fe72a8.execute(Unknown Source)
+	at app//org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:49)
+	at app//org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+	at app//org.openqa.selenium.remote.http.AddSeleniumUserAgent$$Lambda$651/0x0000000801021660.execute(Unknown Source)
+	at app//org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+	at app//org.openqa.selenium.remote.http.Filter$$Lambda$492/0x0000000800fe72a8.execute(Unknown Source)
+	at app//org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:99)
+	at app//org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at app//org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at app//org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at app//org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at app//org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at app//org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at app//org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at app/jdk.proxy2/jdk.proxy2.$Proxy26.click(Unknown Source)
+	at app//pom.LoginPage.clickOnLogin(LoginPage.java:32)
+	at app//test.ValidatingLoginFunctionality.verifyLoginWithperformance_glitch_user(ValidatingLoginFunctionality.java:102)
+	at java.base@17.0.5/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base@17.0.5/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base@17.0.5/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base@17.0.5/java.lang.Thread.run(Thread.java:833)
+... Removed 11 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test.TestCasesForFunctionalityOfSwagLabs</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="RemoveMultipleProductsFromCart">
+                  </a> <!-- RemoveMultipleProductsFromCart -->
+                  <span class="method-name">RemoveMultipleProductsFromCart</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addMultipleProductToCart">
+                  </a> <!-- addMultipleProductToCart -->
+                  <span class="method-name">addMultipleProductToCart</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addProductOnCart">
+                  </a> <!-- addProductOnCart -->
+                  <span class="method-name">addProductOnCart</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLogInFunctionality(problem_user, secret_sauce)">
+                  </a> <!-- verifyLogInFunctionality(problem_user, secret_sauce) -->
+                  <span class="method-name">verifyLogInFunctionality</span>
+                  <span class="parameters">(problem_user,secret_sauce)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLogInFunctionality(performance_glitch_user, secret_sauce)">
+                  </a> <!-- verifyLogInFunctionality(performance_glitch_user, secret_sauce) -->
+                  <span class="method-name">verifyLogInFunctionality</span>
+                  <span class="parameters">(performance_glitch_user,secret_sauce)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLogInFunctionality(standard_user, secret_sauce)">
+                  </a> <!-- verifyLogInFunctionality(standard_user, secret_sauce) -->
+                  <span class="method-name">verifyLogInFunctionality</span>
+                  <span class="parameters">(standard_user,secret_sauce)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLogInFunctionality(locked_out_user, secret_sauce)">
+                  </a> <!-- verifyLogInFunctionality(locked_out_user, secret_sauce) -->
+                  <span class="method-name">verifyLogInFunctionality</span>
+                  <span class="parameters">(locked_out_user,secret_sauce)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test.ValidatingLoginFunctionality</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginWithlocked_out_user">
+                  </a> <!-- verifyLoginWithlocked_out_user -->
+                  <span class="method-name">verifyLoginWithlocked_out_user</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginWithproblem_user">
+                  </a> <!-- verifyLoginWithproblem_user -->
+                  <span class="method-name">verifyLoginWithproblem_user</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginWithstandard_user">
+                  </a> <!-- verifyLoginWithstandard_user -->
+                  <span class="method-name">verifyLoginWithstandard_user</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">D:\GIT\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Functional Testing on chrome&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;Chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;test.TestCasesForFunctionalityOfSwagLabs&quot;/&gt;
+      &lt;class name=&quot;test.ValidatingLoginFunctionality&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Functional Testing on chrome --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Functional Testing on chrome (2 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(13);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'verifyLogInFunctionality')
+data.setCell(0, 2, 'test.TestCasesForFunctionalityOfSwagLabs')
+data.setCell(0, 3, 6027);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'removeProductFromCart')
+data.setCell(1, 2, 'test.TestCasesForFunctionalityOfSwagLabs')
+data.setCell(1, 3, 4187);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'addProductOnCart')
+data.setCell(2, 2, 'test.TestCasesForFunctionalityOfSwagLabs')
+data.setCell(2, 3, 4125);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'VerifyChekoutFunctionality')
+data.setCell(3, 2, 'test.TestCasesForFunctionalityOfSwagLabs')
+data.setCell(3, 3, 3773);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'RemoveMultipleProductsFromCart')
+data.setCell(4, 2, 'test.TestCasesForFunctionalityOfSwagLabs')
+data.setCell(4, 3, 3735);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'addMultipleProductToCart')
+data.setCell(5, 2, 'test.TestCasesForFunctionalityOfSwagLabs')
+data.setCell(5, 3, 2907);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'verifyLoginWithproblem_user')
+data.setCell(6, 2, 'test.ValidatingLoginFunctionality')
+data.setCell(6, 3, 1622);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'verifyLoginWithperformance_glitch_user')
+data.setCell(7, 2, 'test.ValidatingLoginFunctionality')
+data.setCell(7, 3, 1323);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'verifyLoginWithstandard_user')
+data.setCell(8, 2, 'test.ValidatingLoginFunctionality')
+data.setCell(8, 3, 1266);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'verifyLoginWithlocked_out_user')
+data.setCell(9, 2, 'test.ValidatingLoginFunctionality')
+data.setCell(9, 3, 1215);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'verifyLogInFunctionality')
+data.setCell(10, 2, 'test.TestCasesForFunctionalityOfSwagLabs')
+data.setCell(10, 3, 875);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'verifyLogInFunctionality')
+data.setCell(11, 2, 'test.TestCasesForFunctionalityOfSwagLabs')
+data.setCell(11, 3, 867);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'verifyLogInFunctionality')
+data.setCell(12, 2, 'test.TestCasesForFunctionalityOfSwagLabs')
+data.setCell(12, 3, 792);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 32 seconds</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.TestCasesForFunctionalityOfSwagLabs</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setupReports</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-method before">
+                <span class="method-name">BrowserLaunching(Chrome)</span>
+                <span class="method-start">3271 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyLogInFunctionality(standard_user, secret_sauce)</span>
+                <span class="method-start">11885 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getTestResult([TestResult name=verifyLogInFunctionality status=SUCCESS method=TestCasesForFunctionalityOfSwagLabs....)</span>
+                <span class="method-start">12758 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">BrowserLaunching(Chrome)</span>
+                <span class="method-start">12773 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyLogInFunctionality(locked_out_user, secret_sauce)</span>
+                <span class="method-start">16622 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getTestResult([TestResult name=verifyLogInFunctionality status=SUCCESS method=TestCasesForFunctionalityOfSwagLabs....)</span>
+                <span class="method-start">17433 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">BrowserLaunching(Chrome)</span>
+                <span class="method-start">17440 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyLogInFunctionality(problem_user, secret_sauce)</span>
+                <span class="method-start">21505 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getTestResult([TestResult name=verifyLogInFunctionality status=SUCCESS method=TestCasesForFunctionalityOfSwagLabs....)</span>
+                <span class="method-start">22385 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">BrowserLaunching(Chrome)</span>
+                <span class="method-start">22387 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyLogInFunctionality(performance_glitch_user, secret_sauce)</span>
+                <span class="method-start">26875 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getTestResult([TestResult name=verifyLogInFunctionality status=SUCCESS method=TestCasesForFunctionalityOfSwagLabs....)</span>
+                <span class="method-start">32910 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">BrowserLaunching(Chrome)</span>
+                <span class="method-start">32920 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">addProductOnCart</span>
+                <span class="method-start">39431 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getTestResult([TestResult name=addProductOnCart status=SUCCESS method=TestCasesForFunctionalityOfSwagLabs.addProdu...)</span>
+                <span class="method-start">43559 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">BrowserLaunching(Chrome)</span>
+                <span class="method-start">43565 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">removeProductFromCart</span>
+                <span class="method-start">54670 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getTestResult([TestResult name=removeProductFromCart status=FAILURE method=TestCasesForFunctionalityOfSwagLabs.rem...)</span>
+                <span class="method-start">59424 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">BrowserLaunching(Chrome)</span>
+                <span class="method-start">59429 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">addMultipleProductToCart</span>
+                <span class="method-start">62972 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getTestResult([TestResult name=addMultipleProductToCart status=SUCCESS method=TestCasesForFunctionalityOfSwagLabs....)</span>
+                <span class="method-start">65885 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">BrowserLaunching(Chrome)</span>
+                <span class="method-start">65888 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">RemoveMultipleProductsFromCart</span>
+                <span class="method-start">70417 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getTestResult([TestResult name=RemoveMultipleProductsFromCart status=SUCCESS method=TestCasesForFunctionalityOfSwa...)</span>
+                <span class="method-start">74153 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">BrowserLaunching(Chrome)</span>
+                <span class="method-start">74156 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">VerifyChekoutFunctionality</span>
+                <span class="method-start">81608 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getTestResult([TestResult name=VerifyChekoutFunctionality status=FAILURE method=TestCasesForFunctionalityOfSwagLab...)</span>
+                <span class="method-start">85769 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.ValidatingLoginFunctionality</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpReports</span>
+                <span class="method-start">85772 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">BrowserLaunching(Chrome)</span>
+                <span class="method-start">85809 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyLoginWithstandard_user</span>
+                <span class="method-start">93952 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getTestResult([TestResult name=verifyLoginWithstandard_user status=SUCCESS method=ValidatingLoginFunctionality.ver...)</span>
+                <span class="method-start">95219 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">BrowserLaunching(Chrome)</span>
+                <span class="method-start">95223 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyLoginWithlocked_out_user</span>
+                <span class="method-start">102420 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getTestResult([TestResult name=verifyLoginWithlocked_out_user status=SUCCESS method=ValidatingLoginFunctionality.v...)</span>
+                <span class="method-start">103638 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">BrowserLaunching(Chrome)</span>
+                <span class="method-start">103640 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyLoginWithproblem_user</span>
+                <span class="method-start">118187 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getTestResult([TestResult name=verifyLoginWithproblem_user status=SUCCESS method=ValidatingLoginFunctionality.veri...)</span>
+                <span class="method-start">119811 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">BrowserLaunching(Chrome)</span>
+                <span class="method-start">119814 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyLoginWithperformance_glitch_user</span>
+                <span class="method-start">127219 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getTestResult([TestResult name=verifyLoginWithperformance_glitch_user status=FAILURE method=ValidatingLoginFunctio...)</span>
+                <span class="method-start">135384 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.TestCasesForFunctionalityOfSwagLabs</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">publishReports</span>
+                <span class="method-start">135386 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.ValidatingLoginFunctionality</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">publishReports</span>
+                <span class="method-start">137634 ms</span>
+              </div> <!-- configuration-test after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

@@ -1,0 +1,12 @@
+package utility;
+
+import java.io.FileInputStream;
+
+public class Parameterization {
+	
+	public static void getExcelData() {
+		
+		FileInputStream file = new FileInputStream("D:\\GIT\\Kite\\Test.xlsx");
+	}
+
+}

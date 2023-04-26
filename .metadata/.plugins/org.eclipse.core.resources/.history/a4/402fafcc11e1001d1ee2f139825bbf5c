@@ -1,0 +1,13 @@
+package utility;
+
+import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+
+public class Reports {
+	
+	public static void createReports() {
+		
+		ExtentSparkReporter htmlReports = new ExtentSparkReporter("Naptol.html");
+		
+	}
+
+}

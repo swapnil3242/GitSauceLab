@@ -1,0 +1,18 @@
+package test;
+
+import org.apache.xmlbeans.impl.xb.xsdschema.ListDocument.List;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+public class AmazonDropdownValues {
+	
+	public static void categoriesDropdownValues(WebDriver driver) {
+		
+		java.util.List<WebElement> obj = driver.findElements(By.xpath("//select[@id='searchDropdownBox']"));
+		
+		System.out.println(obj);
+		
+	}
+
+}

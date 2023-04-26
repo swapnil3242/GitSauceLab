@@ -1,0 +1,19 @@
+package Basic;
+
+public abstract class AbstractClass {
+	
+	public void test()
+	{
+		System.out.println("Complete method");
+	}
+	
+	public abstract void sample();
+
+	
+	public static void main(String[] args) {
+		AbstractClass obj = new AbstractClass();
+		
+	}
+
+	
+}
